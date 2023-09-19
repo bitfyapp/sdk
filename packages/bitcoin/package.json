@@ -1,0 +1,31 @@
+{
+  "name": "@baas-sdk/bitcoin",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Victor Rodrigues <victor.rodrigues@bitfy.app>",
+  "homepage": "https://gitlab.com/victor.rodrigues6/baas#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/victor.rodrigues6/baas.git"
+  },
+  "scripts": {
+    "test": "node ./test/Transaction.test.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@baas-sdk/common": "*",
+    "@types/bitcore-lib": "^0.15.4"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/victor.rodrigues6/baas/issues"
+  }
+}

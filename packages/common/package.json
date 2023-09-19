@@ -1,0 +1,27 @@
+{
+  "name": "@baas-sdk/common",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Victor Rodrigues <victor.rodrigues@bitfy.app>",
+  "homepage": "https://gitlab.com/victor.rodrigues6/baas#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/victor.rodrigues6/baas.git"
+  },
+  "scripts": {
+    "test": "node ./test/common.test.js",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/victor.rodrigues6/baas/issues"
+  }
+}
