@@ -18,8 +18,8 @@
     "commit": "git-cz",
     "docfy": "typedoc",
     "publish:ci": "lerna publish from-package --yes",
+    "publish:ci:canary": "lerna publish --canary --dist-tag dev --preid dev.$(git rev-parse --short HEAD) --exact --graph-type all --force-publish \\\"*\\\" --no-verify-access --yes",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
-    "version:ci:dev": "lerna version --yes --conventional-commits --conventional-prerelease",
     "test": "npm run test -w @bws-baas/client"
   }
 }

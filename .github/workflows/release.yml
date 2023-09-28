@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
   publish:
@@ -32,7 +31,7 @@ jobs:
 
       - name: Bump versions and publish packages
         run: |
-          [ ${GITHUB_REF##*/} == 'main' ] && npm run version:ci || npm run version:ci:dev 
+          npm run version:ci
           npm run publish:ci
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
