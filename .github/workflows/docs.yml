@@ -3,7 +3,7 @@ name: Upload Doc site
 on:
   push:
     branches:
-      - main
+      - ci/docs
 
 jobs:
   deploy:
