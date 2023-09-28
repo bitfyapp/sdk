@@ -1,4 +1,18 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.0"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
+    }
+  },
+  "ignoreChanges": [
+    "**/node_modules/**",
+    "**/.env.ee2e.example",
+    "**/jest.config.json",
+    "**/tsconfig.test.json",
+    "**/package.json",
+    "**/*.md",
+    "**/test/**"
+  ]
 }

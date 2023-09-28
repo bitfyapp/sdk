@@ -1,12 +1,25 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "lerna": "^7.3.0",
+    "typedoc": "^0.25.1"
+  },
   "devDependencies": {
     "@types/node": "^20.6.2",
-    "lerna": "^7.3.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.1.0",
     "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "docfy": "typedoc",
+    "publish:ci": "lerna publish from-package --yes",
+    "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
+    "version:ci:dev": "lerna version --yes --conventional-commits --conventional-prerelease",
+    "test": "npm run test -w @bws-baas/client"
   }
 }

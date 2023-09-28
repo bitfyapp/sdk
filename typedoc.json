@@ -1,0 +1,12 @@
+{
+  "out": "./docs",
+  "json": "./docs/data.json",
+  "entryPoints": ["./packages/client/src/index.ts"],
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "validation": {
+    "notExported": false,
+    "invalidLink": true,
+    "notDocumented": true
+  }
+}

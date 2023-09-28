@@ -1,27 +1,31 @@
 {
-  "name": "@baas-sdk/common",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "name": "@bws-baas/common",
+  "version": "1.0.0",
+  "description": "Pacote com códigos de uso comum.",
   "author": "Victor Rodrigues <victor.rodrigues@bitfy.app>",
-  "homepage": "https://gitlab.com/victor.rodrigues6/baas#readme",
+  "homepage": "https://github.com/bitfyapp/sdk",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "test"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/victor.rodrigues6/baas.git"
-  },
-  "scripts": {
-    "test": "node ./test/common.test.js",
-    "build": "tsc"
+    "url": "https://github.com/bitfyapp/sdk",
+    "directory": "packages/client"
   },
   "bugs": {
-    "url": "https://gitlab.com/victor.rodrigues6/baas/issues"
-  }
+    "url": "https://gitlab.com/bitfyapp/baas/issues"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@bws-baas/common.test.js"
+  },
+  "gitHead": "27e7befaba914bf1abf55b6b215831990698a909"
 }

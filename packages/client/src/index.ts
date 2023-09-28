@@ -1,3 +1,14 @@
-export * from "./Client";
-export * from "./ClientOptions";
-export { Transaction, SignedTransaction } from "@baas-sdk/common";
+export * from './apis/tokenContractManager/requests/AddTokenRequest';
+export * from './apis/tokenContractManager/TokenContractManager';
+export * from './apis/walletManager/WalletManager';
+export * from './plugins/environment/Environment.port';
+export * from './plugins/auth/Auth.port';
+export * from './plugins/logger/Logger.port';
+export * from './exceptions/BaasApiInvalidPayload.exception';
+export * from './exceptions/BaasApiUnauthorized.exception';
+export * from './exceptions/BaasApiUnauthenticated.exception';
+export * from './exceptions/BaasApiServiceUnavailable.exception';
+export * from './exceptions/BaasApiInternalServerError.exception';
+export * from './Client';
+export * from './ClientOptions';
+export * from '@bws-baas/common';
